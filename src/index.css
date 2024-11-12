@@ -1,0 +1,108 @@
+/* stylelint-disable scss/at-rule-no-unknown */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-primary: #174da4;
+  --color-secondary: #60d0a5;
+  --color-tertiary: #131825;
+  --color-grey: #646464;
+  --font-color-1: #fff;
+  --font-color-2: #7d7d7d;
+  --font-color-3: #2bcdaa;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* * Defines what 1rem is */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 1.6rem;
+}
+
+.colored {
+  background: var(--font-color-3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.color-1 {
+  color: var(--font-color-3);
+}
+
+.bg-1 {
+  background: var(--color-tertiary);
+}
+
+.bg-2 {
+  background: linear-gradient(
+    170deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+}
+
+.btn {
+  background: linear-gradient(
+    100deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  color: var(--font-color-1);
+}
+.text-color{
+  color: #2bcdaa;
+}
+
+.footer-color{
+  background-color: #27325A;
+}
+.border-color{
+  border: 1px solid #2bcdaa ;
+}
+
+.sub-btn {
+  background: linear-gradient(
+    100deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.sub-heading {
+  font-weight: 600;
+}
+
+.active {
+  color: var(--color-secondary);
+}
+
+.overlay {
+  filter: brightness(0.5);
+}
