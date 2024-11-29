@@ -167,7 +167,7 @@ const Response = () => {
             } `}
           >
             {questionaire?.responseStatus
-              ? "Already responded. Thank you!"
+              ? "Already responded.  check your email >>> Thank you!"
               : sent}
           </p>
         )}
